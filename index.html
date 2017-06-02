@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    h3.custom_selection::-moz-selection {
+        background: rgba(255, 251, 102, 0.8);
+        color: rgb(19, 188, 188);
+    }
+    
+    h3.custom_selection::-webkit-selection {
+        background: rgba(255, 251, 102, 0.8);
+        color: rgb(19, 188, 188);
+    }
+    
+    h3.custom_selection::selection {
+        background: rgba(255, 251, 102, 0.8);
+        color: rgb(19, 188, 188);
+    }
+    
+    .not_selection {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+</style>
+
+<body>
+    <h3 class="default_selection">
+        Text with the default (system) color and selection background
+    </h3>
+    <h3 class="custom_selection">
+        Text with the color and background of the selection
+    </h3>
+    <h3 class="not_selection">
+        Text user doesn't selected mouse
+    </h3>
+
+</body>
+
+</html>
